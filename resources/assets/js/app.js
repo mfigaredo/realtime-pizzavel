@@ -24,7 +24,8 @@ const app = new Vue({
     mounted() {
       Echo.channel('pizza-tracker')
       .listen('OrderStatusChanged', (e) => {
-        console.log('omgggg realtime bro')
+        console.log('omgggg realtime bro');
+//        alert('omgggg realtime bro');
       });
     }
 });

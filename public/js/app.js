@@ -11062,6 +11062,7 @@ var app = new Vue({
   mounted: function mounted() {
     Echo.channel('pizza-tracker').listen('OrderStatusChanged', function (e) {
       console.log('omgggg realtime bro');
+      //        alert('omgggg realtime bro');
     });
   }
 });
@@ -11084,9 +11085,9 @@ window._ = __webpack_require__(14);
  */
 
 try {
-  window.$ = window.jQuery = __webpack_require__(16);
+    window.$ = window.jQuery = __webpack_require__(16);
 
-  __webpack_require__(17);
+    __webpack_require__(17);
 } catch (e) {}
 
 /**
@@ -11108,9 +11109,9 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 var token = document.head.querySelector('meta[name="csrf-token"]');
 
 if (token) {
-  window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
+    window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
 } else {
-  console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
+    console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
 }
 
 /**
@@ -11124,10 +11125,10 @@ if (token) {
 window.Pusher = __webpack_require__(38);
 
 window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
-  broadcaster: 'pusher',
-  key: 'b9bfc637fbe77a80cf05',
-  cluster: 'us2',
-  encrypted: true
+    broadcaster: 'pusher',
+    key: 'a3159a027b47beb15827',
+    cluster: 'us2',
+    encrypted: true
 });
 
 /***/ }),
@@ -57980,7 +57981,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/assets/js/components/OrderProgress.vue"
+Component.options.__file = "resources\\assets\\js\\components\\OrderProgress.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -57989,9 +57990,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-6fd91d18", Component.options)
+    hotAPI.createRecord("data-v-432be798", Component.options)
   } else {
-    hotAPI.reload("data-v-6fd91d18", Component.options)
+    hotAPI.reload("data-v-432be798", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -58076,7 +58077,8 @@ var render = function() {
     _vm._v(" "),
     _c("div", { staticClass: "order-status" }, [
       _c("strong", [_vm._v("Order Status:")]),
-      _vm._v(" " + _vm._s(_vm.statusNew) + "\n    ")
+      _vm._v(" "),
+      _c("h3", [_vm._v(_vm._s(_vm.statusNew))])
     ]),
     _vm._v(" "),
     _vm.progress >= 100
@@ -58090,7 +58092,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-6fd91d18", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-432be798", module.exports)
   }
 }
 
@@ -58120,7 +58122,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/assets/js/components/OrderAlert.vue"
+Component.options.__file = "resources\\assets\\js\\components\\OrderAlert.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -58129,9 +58131,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-ad688db6", Component.options)
+    hotAPI.createRecord("data-v-7a391665", Component.options)
   } else {
-    hotAPI.reload("data-v-ad688db6", Component.options)
+    hotAPI.reload("data-v-7a391665", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -58227,7 +58229,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-ad688db6", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-7a391665", module.exports)
   }
 }
 
@@ -58257,7 +58259,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/assets/js/components/OrderNotifications.vue"
+Component.options.__file = "resources\\assets\\js\\components\\OrderNotifications.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -58266,9 +58268,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-93a3449e", Component.options)
+    hotAPI.createRecord("data-v-378a7af1", Component.options)
   } else {
-    hotAPI.reload("data-v-93a3449e", Component.options)
+    hotAPI.reload("data-v-378a7af1", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -58628,7 +58630,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-93a3449e", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-378a7af1", module.exports)
   }
 }
 

@@ -5,7 +5,7 @@
         </div>
 
         <div class="order-status">
-            <strong>Order Status:</strong> {{ statusNew }}
+            <strong>Order Status:</strong> <h3>{{ statusNew }}</h3>
         </div>
 
         <img src="/img/delivery.gif" alt="delivery" v-if="progress >= 100">
